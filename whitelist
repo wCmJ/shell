@@ -1,0 +1,23 @@
+some points.
+1.  echo $1 >> $path 2>&1
+2.  $?: the result of previous command, 0 is true, 1 is false
+3.  if [[ $a -eq 0 ]]: use [[ ]] to compare with others
+4.  if  then... else ... fi
+5.  if  then... elif ... elif ... fi
+6.  while do... done:
+7.  for ... in ... do .... done:
+8.  grep, sed, awk.
+
+awk 'BEGIN{FS="\""}{print $2}' 
+awk 'BEGIN{FS="//"}{print $2}'
+
+iptables-save > $path
+service iptables save(save to /etc/sysconfig/iptables by default)
+iptables -I Chain (insert)
+iptables -D Chain 1 (delete)
+iptables -N Chain (new)
+iptables -A Chain (append)
+iptables -L -n (check)
+-j Chain/DROP/RETURN
+iptables -A ACCESS -p tcp --dport 9445 -j WHITELIST
+if [[ $IP =~ ^([0-9]+\.){3}[0-9]+$ ]] || [[ $IP =~ ^([0-9]+\.){3}[0-9]+/[0-9]+$ ]]
