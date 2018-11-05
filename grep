@@ -1,0 +1,10 @@
+grep searches the input files for lines containing a match to a given pattern list.
+when it finds a match in a line, it copies the line to standard output(by default), or whatever other sort of output you have requested with options.
+
+grep root /etc/passwd
+grep -n root /etc/passwd    show line number
+grep -v root /etc/passwd    donot contain root 
+grep -c root /etc/passwd    get number of line contain root
+
+
+
