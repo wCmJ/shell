@@ -1,13 +1,22 @@
-1. create a user
+1. whitelist
    in .spec file:
    /usr/sbin/useradd user1
-   /usr/sbin/user
-2. specify start file
-3. 
+   echo username | passwd username --stdin
+   usermod -a -G group1 username
+   /usr/sbin/usermod -s '/A/B/C/D' username
+   
+   echo "bin/bash /A/B/C/E" >> /etc/rc.d/rc.local this step add commands to /etc/sudoers
+      in /A/B/C/E: echo "username ALL=(root)NOPASSWD:file directory" >> /etc/sudoers
+   
+   a=`basename abc.abc .abc` 
+   same as:
+   a=`basename abc.abc`
+   a=${a/.abc}
+   /usr/sbin/userdel username
+   sed -i '/^caxis.*/d' /etc/sudoers
+   
+   /usr/bin/sudo -u root file-directory
 
-
-file directory: /A/B/C/D
-add this to sudoers file for specified user
 
 
 
