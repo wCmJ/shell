@@ -1,0 +1,32 @@
+1. create a user
+   in .spec file:
+   /usr/sbin/useradd user1
+   /usr/sbin/user
+2. specify start file
+3. 
+
+
+file directory: /A/B/C/D
+add this to sudoers file for specified user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
