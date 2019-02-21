@@ -1,0 +1,48 @@
+SUID: for files
+    s replases x in owner user.
+    -rwsr-xr-x file
+    1. SUID only works at binary program
+    2. executor must have x right at this file
+    3. only works in run-time
+    4. executor will get owner user's right
+    
+SGID: for files and directory
+    
+
+
+
+SBIT:  for directory
+    1. only root and direcotry creator can remove this directory, others only modify
+    
+
+
+how to set:
+    4:SUID
+    2:SGID
+    1:SBIT
+    
+    chmod 4755 filename ->  -rwsr-xr-x
+    chmod 2555 filename ->  -r-xr-sr-x
+    
+文件或目录必须先有执行权限，然后赋予的SUID、SGID、SBIT才能起作用
+如果不具有执行权限，配置后的标志为S和T。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
